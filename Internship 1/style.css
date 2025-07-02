@@ -1,0 +1,106 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.summary-item:last-child {
+    border-bottom: none;
+}
+
+#totalExpenses {
+    font-weight: bold;
+    color: #dc3545;
+    font-size: 1.1rem;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.expense-item:hover {
+    background-color: #f8f9fa;
+}
+
+.expense-details {
+    flex-grow: 1;
+}
+
+.expense-amount {
+    font-weight: bold;
+    color: #dc3545;
+    margin-right: 15px;
+}
+
+.expense-category {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+.expense-date {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.category-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.category-name {
+    font-weight: 500;
+}
+
+.category-percentage {
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+@media (max-width: 768px) {
+    .expense-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .expense-actions {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+}
